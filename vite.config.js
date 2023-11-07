@@ -3,6 +3,7 @@ import reactRefresh from "@vitejs/plugin-react-refresh"
 import path from "path"
 import dfxJson from "./dfx.json"
 import fs from "fs"
+import('tailwindcss').Config
 
 const isDev = process.env["DFX_NETWORK"] !== "ic"
 
