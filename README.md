@@ -11,3 +11,6 @@ sh -ci "$(curl -fsSL https://internetcomputer.org/install.sh)"
 후 
 
 dfx start --background 
+
+
+npx tailwindcss -i ./index.css -o ../dist/index.css  --watch
