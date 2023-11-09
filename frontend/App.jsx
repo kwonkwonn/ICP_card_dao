@@ -22,13 +22,13 @@ function App() {
     <div className="absolute  top-0  w-full h-screen bg-black opacity-60  z-1">    </div>
       <div className="absolute  top-80 ">
       <p className=" text-white  w-screen  text-7xl mb-6 font-extrabold">the JEMIS</p>
-      <Link href="" className="  text-3xl border  border-white rounded-lg px-4 py-2 text-white">Play Game</Link>
+      <Link to="/GamePlay" className="  text-3xl border  border-white rounded-lg px-4 py-2 text-white">Play Game</Link>
     </div>
 
     <div className="  w-9/12 m-auto  bg-black  py-32 z-1">
       <p className="text-3xl font-extrabold mb-20">카드소개</p>
 
-      <div className="flex flex-col gap-12">
+      <div className="flex flex-col gap-20">
         <div className="flex gap-4">
       <div>
         <img src={`${DataSet[0].img}`} alt="img"></img>
@@ -46,7 +46,7 @@ function App() {
         
         <div className="flex gap-4">
       <div>
-        <img src={`${DataSet[1].img}`} alt="img"></img>
+        <img src={`${DataSet[1].img}`}  alt="img"></img>
         <p className=" text-2xl font-bold">"{DataSet[1].ment}"</p>
         </div>
         <div className="text-start text-2xl font-bold">
@@ -66,6 +66,9 @@ function App() {
     </div>
   
   </div>)
+
+
+
   // return (
   //   <div className="App">
   //     <Header/>

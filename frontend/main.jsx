@@ -9,8 +9,11 @@ import "./index.css";
 import App from "./App"
 import Root from "./routes/root";
 import Forum from "./routes/forum/forum";
+import GamePlay from "./routes/gamePage/gamePlay";
 
 const router = createBrowserRouter([
+  {path:"/GamePlay",
+  element:<GamePlay/>},
   {
     path: "/",
     element: <Root />,
@@ -24,8 +27,10 @@ const router = createBrowserRouter([
     path:"/CardInfo",
     
   }
+
     ]
-  }
+  },
+
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
