@@ -12,6 +12,7 @@ shared actor class CardPack(){
     //카드 추가
     public func addCard(card:Type.Card){
         deck.add(card);
+        
     };
     //카드 수정
     public func updateCardName(cardId: Nat, newName: Text){//카드 이름 수정
