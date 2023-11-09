@@ -4,6 +4,10 @@
       "main": "canisters/counter/main.mo",
       "type": "motoko"
     },
+    "DAO" :{
+      "main": "canisters/DAO/Main.mo",
+      "type": "motoko"
+    },
     "assets": {
       "dependencies": [
         "counter"
