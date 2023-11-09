@@ -9,6 +9,11 @@ import "@connect2ic/core/style.css"
 import { Link } from "react-router-dom"
 import DataSet from "../frontend/cardsData"
 
+import * as counter from "../.dfx/local/canisters/counter"
+import * as cardpack from "../.dfx/local/canisters/cardpack"
+
+import { Storage } from "./components/cardStore"
+
 
 function App() {
 
@@ -27,6 +32,7 @@ function App() {
 
     <div className="  w-9/12 m-auto  bg-black  py-32 z-1">
       <p className="text-3xl font-extrabold mb-20">카드소개</p>
+      <Storage />
 
       <div className="flex flex-col gap-20">
         <div className="flex gap-4">
@@ -102,6 +108,8 @@ function App() {
 
 const client = createClient({
   canisters: {
+    counter,
+    cardpack
   },
   providers: defaultProviders,
   globalProviderConfig: {

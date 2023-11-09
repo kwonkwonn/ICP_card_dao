@@ -1,0 +1,20 @@
+type CardPack = 
+ service {
+   addCard: (Card) -> () oneway;
+   getCard: (nat) -> (Card);
+   updatCardDfs: (nat, nat) -> () oneway;
+   updateCardAtk: (nat, nat) -> () oneway;
+   updateCardCost: (nat, nat) -> () oneway;
+   updateCardDescription: (nat, text) -> () oneway;
+   updateCardName: (nat, text) -> () oneway;
+ };
+type Card = 
+ record {
+   atk: nat;
+   cardId: nat;
+   cost: nat;
+   desc: text;
+   dfs: nat;
+   name: text;
+ };
+service : () -> CardPack

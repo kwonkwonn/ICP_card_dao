@@ -16,9 +16,7 @@ export default function(){
     }
     useEffect(  ()=>{
        gameManager();
-       while(redTeam.health>0 || blueTeam.health>0){
-
-       }
+      
     },[])
 
     const gameManager= async()=>{{
