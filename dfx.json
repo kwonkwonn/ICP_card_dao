@@ -1,5 +1,9 @@
 {
   "canisters": {
+    "cardpack":{
+      "main": "canisters/cardpack/main.mo",
+      "type": "motoko"
+    },
     "counter": {
       "main": "canisters/counter/main.mo",
       "type": "motoko"

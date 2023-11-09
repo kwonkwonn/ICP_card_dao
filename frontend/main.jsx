@@ -23,7 +23,11 @@ const router = createBrowserRouter([
   },{
     path:"/Forum",
     element:<Forum />,
-  },
+  },{
+    path:"/CardInfo",
+    
+  }
+
     ]
   },
 
