@@ -1,8 +1,9 @@
 import Type "./type";
 import Buffer "mo:base/Buffer";
-import Array "mo:base/Array";
 import Nat "mo:base/Nat";
 import Text "mo:base/Text";
+import Array "mo:base/Array";
+
 /*
 카드 추가, 카드 수정, 카드 삭제, 카드 검색, 카드 리스트
 */
@@ -35,10 +36,14 @@ shared actor class CardPack(){
         let newCard = Type.setCardCost(deck.get(cardId), newCost);
         deck.put(cardId, newCard);
     };
-    public func getCard(cardId: Nat): async Type.Card{
+    public func getCard(cardId: Nat): async Type.Card{ //카드 검색
         return deck.get(cardId);
     };
-}
+    public func getAllCard(): async [Type.Card] { //카드 리스트
+        return Buffer.toArray(deck);
+    };
+};
+        
 
     
 
