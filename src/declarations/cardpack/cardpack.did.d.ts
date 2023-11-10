@@ -11,6 +11,7 @@ export interface Card {
 }
 export interface CardPack {
   'addCard' : ActorMethod<[Card], undefined>,
+  'getAllCard' : ActorMethod<[], Array<Card>>,
   'getCard' : ActorMethod<[bigint], Card>,
   'updatCardDfs' : ActorMethod<[bigint, bigint], undefined>,
   'updateCardAtk' : ActorMethod<[bigint, bigint], undefined>,

@@ -9,6 +9,7 @@ export const idlFactory = ({ IDL }) => {
   });
   const CardPack = IDL.Service({
     'addCard' : IDL.Func([Card], [], ['oneway']),
+    'getAllCard' : IDL.Func([], [IDL.Vec(Card)], []),
     'getCard' : IDL.Func([IDL.Nat], [Card], []),
     'updatCardDfs' : IDL.Func([IDL.Nat, IDL.Nat], [], ['oneway']),
     'updateCardAtk' : IDL.Func([IDL.Nat, IDL.Nat], [], ['oneway']),

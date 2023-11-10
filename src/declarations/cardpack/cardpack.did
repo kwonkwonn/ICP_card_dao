@@ -1,6 +1,7 @@
 type CardPack = 
  service {
    addCard: (Card) -> () oneway;
+   getAllCard: () -> (vec Card);
    getCard: (nat) -> (Card);
    updatCardDfs: (nat, nat) -> () oneway;
    updateCardAtk: (nat, nat) -> () oneway;
