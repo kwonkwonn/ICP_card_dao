@@ -1,8 +1,13 @@
 {
   "canisters": {
+    "gameLogic":{
+      "main": "canisters/gameLogic/main.mo",
+      "type": "motoko"
+    },
     "cardpack":{
       "main": "canisters/cardpack/main.mo",
-      "type": "motoko"
+      "type": "motoko",
+      "local": "br5f7-7uaaa-aaaaa-qaaca-cai"
     },
     "counter": {
       "main": "canisters/counter/main.mo",

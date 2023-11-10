@@ -32,7 +32,6 @@ function App() {
 
     <div className="  w-9/12 m-auto  bg-black  py-32 z-1">
       <p className="text-3xl font-extrabold mb-20">카드소개</p>
-      <Storage />
 
       <div className="flex flex-col gap-20">
         <div className="flex gap-4">
