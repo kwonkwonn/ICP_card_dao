@@ -26,7 +26,7 @@ function App() {
 
     <div className="absolute  top-0  w-full h-screen bg-black opacity-60  z-1">    </div>
       <div className="absolute  top-80 ">
-      <p className=" text-white  w-screen  text-7xl mb-6 font-extrabold">the JEMIS</p>
+      <p className=" text-white  w-screen  text-7xl mb-6 font-extrabold">The CarDAO</p>
       <Link to="/GamePlay" className="  text-3xl border  border-white rounded-lg px-4 py-2 text-white">Play Game</Link>
     </div>
 
