@@ -1,4 +1,4 @@
-import Type "./type";
+import Type "../type";
 import Buffer "mo:base/Buffer";
 import Nat "mo:base/Nat";
 import Text "mo:base/Text";
@@ -40,7 +40,8 @@ shared actor class CardPack(){
         return deck.get(cardId);
     };
     public func getAllCard(): async [Type.Card] { //카드 리스트
-        return Buffer.toArray(deck);
+        let Arra= Array.freeze<Type.Card>(Buffer.toVarArray<Type.Card>(deck));
+        
     };
 };
         
