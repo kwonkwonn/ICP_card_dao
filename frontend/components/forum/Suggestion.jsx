@@ -18,10 +18,10 @@ const Suggestion = ({CardId}) =>{
             reason:
             </p>
             <div className="flex justify-around">
-            <button className="text-green-400 font-bold">
+            <button className="text-green-400 font-bold hover:text-green-500">
                 agree
             </button>
-            <button className="text-red-400 font-bold">
+            <button className="text-red-400 font-bold hover:text-red-500">
                 reject
             </button>
             </div>
