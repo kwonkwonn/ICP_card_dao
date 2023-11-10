@@ -1,0 +1,15 @@
+type gameLogic = 
+ service {
+   pullDeck: () -> () oneway;
+   requireDeck: () -> (vec Card);
+ };
+type Card = 
+ record {
+   atk: nat;
+   cardId: nat;
+   cost: nat;
+   desc: text;
+   dfs: nat;
+   name: text;
+ };
+service : () -> gameLogic

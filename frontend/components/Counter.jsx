@@ -21,7 +21,7 @@ const Counter = () => {
   useEffect(() => {
     if (!counter) {
       return
-    }
+   src/declarations/gameLogic/gameLogic.did.js }
     refreshCounter()
   }, [counter])
 
