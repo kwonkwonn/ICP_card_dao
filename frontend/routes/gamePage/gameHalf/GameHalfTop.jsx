@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react"
 import CardHand from "../componenets/card";
 import CardField from "../componenets/cardField";
 
-export default function GameHalfBottom({status, cardOnField}){
+export default function GameHalfBottom({status, cardOnField ,turn }){
     const [hand, setHand] = useState([]);
     const [field,setfield]=useState([]);
     const [cardDetail, setCardDetail] = useState("");
@@ -45,15 +45,15 @@ export default function GameHalfBottom({status, cardOnField}){
                     </div>
             <div className="h-1/4 w-full flex justify-around  ">
                 <div className="  w-28 overflow-hidden rounded-2xl border-4 relative border-black">
-                    <img src="/frontend/assets/card11.jpeg" className=" object-cover" alt="you"></img>
+                    <img src="/frontend/assets/card12.jpeg" className=" object-cover" alt="you"></img>
                         <p>{status.id}</p>
                      </div>
-                <div className="flex w-1/2 gap-4 h-full justify-center">
+                {turn?<div></div>:<div className="flex w-1/2 gap-4 h-full justify-center">
                     {hand.map((el)=>
                         (
                             <CardHand whenClicked={handCardClicked} infoChanger={changeDatail} info={el}/>
                         ))}
-                    </div>
+                    </div>}
                     <div>
                         {goButton}
                     </div>
