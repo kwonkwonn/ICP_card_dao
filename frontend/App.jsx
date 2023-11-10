@@ -11,8 +11,8 @@ import DataSet from "../frontend/cardsData"
 
 import * as counter from "../.dfx/local/canisters/counter"
 import * as cardpack from "../.dfx/local/canisters/cardpack"
+import * as gameLogic from "../.dfx/local/canisters/gameLogic"
 
-import { Storage } from "./components/cardStore"
 
 
 function App() {
@@ -108,7 +108,9 @@ function App() {
 const client = createClient({
   canisters: {
     counter,
-    cardpack
+    cardpack,
+    gameLogic,
+
   },
   providers: defaultProviders,
   globalProviderConfig: {
