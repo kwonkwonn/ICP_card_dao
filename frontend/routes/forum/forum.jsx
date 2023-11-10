@@ -29,15 +29,15 @@ export default function Forum(){
             버프해주세요
             </p>
             <div className="grid grid-rows-3 grid-col-3 grid-flow-col gap-4">
-                <Suggestion CardId={1}/>
-                <Suggestion CardId={2}/>
-                <Suggestion CardId={3}/>
-                <Suggestion CardId={4}/>
-                <Suggestion CardId={5}/>
-                <Suggestion CardId={6}/>
-                <Suggestion CardId={7}/>
-                <Suggestion CardId={8}/>
-                <Suggestion CardId={9}/>
+                <Suggestion CardId={11}/>
+                <Suggestion CardId={12}/>
+                <Suggestion CardId={13}/>
+                <Suggestion CardId={14}/>
+                <Suggestion CardId={15}/>
+                <Suggestion CardId={16}/>
+                <Suggestion CardId={17}/>
+                <Suggestion CardId={18}/>
+                <Suggestion CardId={19}/>
                 {/*9개 이상은 상세 페이지에서 */}
             </div>
             <div className="flex justify-end mr-4">

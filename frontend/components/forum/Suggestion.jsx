@@ -5,11 +5,9 @@ const Suggestion = ({CardId}) =>{
 
     return(
         <div className="border-solid border-2 m-4 ">
-            {/* <p>
-            CardId: {CardId} 
-            </p> */}
-            <img src="frontend/assets/mainImage.jpeg"/>
-            {/*더미 이미지 | to do 카드 DB에서 이미지 가져오기*/}
+            <Link to={`/CardInfo/${CardId}`} className="w-30">
+                <img src={`frontend/assets/card${CardId}.jpeg`}/>
+            </Link>
             <p>
             name:
             </p>
@@ -19,9 +17,14 @@ const Suggestion = ({CardId}) =>{
             <p>
             reason:
             </p>
-            <Link to={`/CardInfo/${CardId}`}>
-                view detail
-            </Link>
+            <div className="flex justify-around">
+            <button className="text-green-400 font-bold">
+                agree
+            </button>
+            <button className="text-red-400 font-bold">
+                reject
+            </button>
+            </div>
         </div>
     );
 }
